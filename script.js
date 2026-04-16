@@ -75,10 +75,20 @@ function showNext() {
       textEl.style.opacity = 1;
       index++;
     } else {
-      textEl.innerHTML = "<div class='final'>amo vc princesa â¤ï¸</div>";
-      btn.style.display = "none";
+      textEl.textContent = "...";
+
+      setTimeout(() => {
+        textEl.style.opacity = 0;
+
+        setTimeout(() => {
+          textEl.innerHTML = "<div class='final'>amo vc princesa ❤️</div>";
+          textEl.style.opacity = 1;
+          btn.style.display = "none";
+        }, 600);
+
+      }, 1200);
     }
-  }, 1200);
+  }, 400);
 }
 
 btn.addEventListener("click", showNext);
