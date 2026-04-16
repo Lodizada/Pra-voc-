@@ -78,7 +78,7 @@ function showNext() {
       textEl.innerHTML = "<div class='final'>amo vc princesa â¤ï¸</div>";
       btn.style.display = "none";
     }
-  }, 1);
+  }, 1200);
 }
 
 btn.addEventListener("click", showNext);
